@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#07060c" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f2f8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Neo4BG" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <!-- Écran de démarrage iPhone Air (420 × 912 points, ×3), sombre comme l'app -->
+    <link rel="apple-touch-startup-image" media="(device-width: 420px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash-air.png" />
+    <title>Neo4BG Nova</title>
+    <script>
+        // Thème appliqué avant le premier rendu pour éviter le flash.
+        try {
+            var t = localStorage.getItem('nova_bg_theme');
+            var dark = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+    </script>
+  <script type="module" crossorigin src="./assets/index-BeGfdLLT.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-XKyaHtl9.js">
+  <link rel="modulepreload" crossorigin href="./assets/charts-YH-DQ7HW.js">
+  <link rel="modulepreload" crossorigin href="./assets/dist-CMedSjkm.js">
+  <link rel="modulepreload" crossorigin href="./assets/definitions-BdWVgBTV.js">
+  <link rel="modulepreload" crossorigin href="./assets/preload-helper-CRzLMJPS.js">
+  <link rel="modulepreload" crossorigin href="./assets/ui-BR9p6Bsx.js">
+  <link rel="modulepreload" crossorigin href="./assets/users-C5A3aN_T.js">
+  <link rel="modulepreload" crossorigin href="./assets/arrow-right-DDj6p8G9.js">
+  <link rel="modulepreload" crossorigin href="./assets/Shell-B-4MYEgv.js">
+  <link rel="modulepreload" crossorigin href="./assets/sun-Dyw1p7cw.js">
+  <link rel="modulepreload" crossorigin href="./assets/addMonths-LQWqPo09.js">
+  <link rel="modulepreload" crossorigin href="./assets/actions-BzSaxivC.js">
+  <link rel="modulepreload" crossorigin href="./assets/power-CQXgpgSr.js">
+  <link rel="modulepreload" crossorigin href="./assets/triangle-alert-DkKU9_ok.js">
+  <link rel="modulepreload" crossorigin href="./assets/loader-circle-BH6UQU0X.js">
+  <link rel="modulepreload" crossorigin href="./assets/insights-DvvUZKem.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-BbRSvKkA.css">
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
